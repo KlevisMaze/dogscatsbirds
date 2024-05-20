@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+#dog-photos img,
+#cat-photos img,
+#bird-photos img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#dog-section, #cat-section, #bird-section {
+    margin: 20px 0;
+}
+
+#dog-photos, #cat-photos, #bird-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#dog-photos img, #cat-photos img, #bird-photos img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+#dog-section {
+    margin: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#cat-section {
+    margin: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#bird-section {
+    margin: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#dog-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#dog-photos img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#view-all-btn {
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-container {
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 40px;
+    /* Space for the icon */
+    box-sizing: border-box;
+}
+
+#search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    pointer-events: none;
+    /* Ensure the icon doesn't interfere with input */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust this value to match the header height */
+        left: 0;
+        background-color: #333;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
