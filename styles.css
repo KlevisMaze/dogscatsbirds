@@ -146,7 +146,7 @@ footer {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding-right: 40px;
-    /* Space for the icon */
+
     box-sizing: border-box;
 }
 
@@ -157,7 +157,7 @@ footer {
     transform: translateY(-50%);
     font-size: 20px;
     pointer-events: none;
-    /* Ensure the icon doesn't interfere with input */
+    
 }
 
 /* Responsive Styles */
@@ -171,7 +171,7 @@ footer {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjust this value to match the header height */
+        top: 60px; 
         left: 0;
         background-color: #333;
     }
