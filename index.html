@@ -12,33 +12,40 @@
             <div class="menu-icon" id="menu-icon">&#9776;</div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#" id="home-link">Home</a></li>
-                <li><a href="#" id="cats-link">Cats</a></li>
                 <li><a href="#" id="dogs-link">Dogs</a></li>
+                <li><a href="#" id="cats-link">Cats</a></li>
                 <li><a href="#" id="birds-link">Birds</a></li>
                 <li><a href="#" id="about-us-link">About Us</a></li>
             </ul>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
         </nav>
     </header>
     <main id="content">
         <h1>Welcome to Our Pet Website</h1>
         <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Search for dogs...">
+            <input type="text" id="search-bar" placeholder="Search for pets...">
             <span id="search-icon">&#128269;</span> 
         </div>
-        <div id="dog-section">
-            <h2>Dogs</h2>
+        <div id="dog-section" class="pet-section">
+            <div class="section-header">
+                <h2>Dogs</h2>
+                <button id="view-all-dogs-btn">View All Dogs</button>
+            </div>
             <div id="dog-photos"></div>
-            <button id="view-all-btn">View All</button>
         </div>
-        <div id="cat-section">
-            <h2>Cats</h2>
+        <div id="cat-section" class="pet-section">
+            <div class="section-header">
+                <h2>Cats</h2>
+                <button id="view-all-cats-btn">View All Cats</button>
+            </div>
             <div id="cat-photos"></div>
-            <button id="view-all-btn">View All</button>
         </div>
-        <div id="bird-section">
-            <h2>Birds</h2>
+        <div id="bird-section" class="pet-section">
+            <div class="section-header">
+                <h2>Birds</h2>
+                <button id="view-all-birds-btn">View All Birds</button>
+            </div>
             <div id="bird-photos"></div>
-            <button id="view-all-btn">View All</button>
         </div>
     </main>
     <footer>
